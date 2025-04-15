@@ -9,7 +9,7 @@ pipeline{
         stage("dependency"){
             steps{
                 bat '''
-                    python -m venv venv
+                    python3 -m venv venv
                     call venv\\Scripts\\activate
                     pip install --upgrade pip
                     pip install pytest
